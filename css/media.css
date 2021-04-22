@@ -1,0 +1,25 @@
+
+
+
+
+
+@media (min-width: 576px) {/* CSS ���: 576px <= ������ <= 767px */}
+
+
+@media (min-width: 768px) {/* CSS ���: 768px <= ������ <= 991px */}
+
+
+@media (min-width: 992px) {/* CSS ���: 992px <= ������ <= 1119px */}
+
+
+@media (min-width: 800px) and (max-width: 999px){
+    .frame{
+        max-width: 800px;
+    }
+    nav, .fixed_block{
+        max-width: 150px;
+    }
+    main{
+        max-width: 650px;
+    }
+}
