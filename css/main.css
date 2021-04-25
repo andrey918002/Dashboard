@@ -25,7 +25,6 @@ body textarea:required:valid {
 }
 nav{
   width: 15%;
-  height: 100vh;
   position: relative;
 }
 .fixed_block{
@@ -45,6 +44,112 @@ nav{
   padding: 25px 0 25px 17%!important;
   border-bottom: 1px solid gray;
 }
+.burger_and_header{
+  display: flex;
+  flex-direction: row;
+}
+.burger-menu {
+  padding: 0;
+  display: none;
+  width: 10%;
+}
+.burger-menu .wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+  height: 100%;
+}
+.wrapper #check-menu {
+  display: none;}
+.burger-menu .wrapper .label_menu {
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+
+}
+.wrapper .label_menu .burger-line {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 100%;
+  height: 8px;
+  border-radius: 3px;
+  background-color: #8A8A8A;
+  z-index: 8;}
+.burger-menu .wrapper .label_menu .third-line {
+  top: 20px; }
+.burger-menu .wrapper .label_menu .fourth-line {
+  top: 40px; }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu {
+  position: fixed;
+  }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu .burger-line{
+  left:0;
+}
+.burger-menu .wrapper .navigation_menu {
+  padding-top: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  width: 0;
+  font-size: 0;
+  overflow: hidden;
+  background-color: rgba(18, 18, 18, 0.97);
+  z-index: 2; }
+.burger-menu .wrapper .navigation_menu li {
+  display: block;
+  line-height: 29px; }
+.burger-menu .wrapper .navigation_menu li .menu_links {
+  display: block;
+  width: 100%;
+  padding: 20px 0 0 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 24px; }
+.burger-menu .wrapper .navigation_menu li .menu_links:hover {
+  color: #c32056; }
+.burger-menu .wrapper #check-menu:checked ~ .navigation_menu {
+  width: 30%;
+  font-size: 24px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu .first-line {
+  display: none; }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu .second-line {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 10px;
+  background-color: #FFFFFF; }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu .third-line {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 10px;
+  background-color: #FFFFFF; }
+.burger-menu .wrapper #check-menu:checked ~ .label_menu .fourth-line {
+  display: none; }
+
+
 nav .fixed_block ul{
   padding: 35px 5% 0 5%;
 }
@@ -87,12 +192,10 @@ nav .fixed_block ul li:nth-child(5) a::before{
 nav .fixed_block ul li a:hover:before{
   filter: brightness(200%);
 }
-
 body .frame main{
   display: flex;
   flex-direction: column;
   width: 85%;
-  height: 200vh;
   color: #868686;
 }
 body .frame main .first_row{
@@ -201,6 +304,12 @@ body .frame main .second_row ul li{
 body .frame main .second_row ul li:nth-child(1){
   font-size: 19px;
 }
+label{
+  margin-left: 2%;
+}
+label:hover{
+  color: #b8afaf;
+}
 body .frame main .second_row ul li:nth-child(2){
   padding-bottom: 20px;
   border-bottom: 1px solid gray;
@@ -283,6 +392,7 @@ body .frame main .third_row form .tasks_ul{
 body .frame main .third_row form .tasks_ul li{
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 20px 2% 20px 2%;
   border-bottom: 1px solid gray;
 }
@@ -290,9 +400,12 @@ body .frame main .third_row form .tasks_ul li:nth-child(1),
 body .frame main .third_row form .tasks_ul li:nth-child(5){
   border-bottom: none!important;
 }
-body .frame main .third_row form .tasks_ul li span{
+/*body .frame main .third_row form .tasks_ul li span{
   display: block;
   margin-left: 2%;
+  flex-basis: 100%;
+}*/
+body .frame main .third_row form .tasks_ul li label{
   flex-basis: 100%;
 }
 body .frame main .third_row form .tasks_ul li input:nth-child(3){
@@ -538,6 +651,3 @@ h3{
   height: 80px;
   background-color: #c32056;
 }
-
-
-

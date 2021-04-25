@@ -13,13 +13,127 @@
 
 
 @media (min-width: 800px) and (max-width: 999px){
-    .frame{
-        max-width: 800px;
+    body .frame main .first_row{
+        flex-wrap: wrap;
     }
-    nav, .fixed_block{
-        max-width: 150px;
+    body .frame main .first_row ul{
+        flex-basis: 46%;
     }
-    main{
-        max-width: 650px;
+    body .frame main .third_row form{
+        flex-direction: column;
+    }
+    body .frame main .third_row form .workers_ul{
+        flex-basis: 90%;
+    }
+}
+@media (min-width: 650px) and (max-width: 799px){
+    body .frame nav{
+        display: none;
+    }
+    body .frame main{
+        width: 100%;
+    }
+    body .frame main .first_row{
+        flex-wrap: wrap;
+    }
+    body .frame main .first_row ul{
+        flex-basis: 46%;
+    }
+    body .frame main .third_row form{
+        flex-direction: column;
+    }
+    body .frame main .third_row form .workers_ul{
+        flex-basis: 90%;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .header_0{
+        margin-left: 5%;
+    }
+    .popup{
+        width: 100%;
+        z-index: 11;
+    }
+}
+@media (min-width: 500px) and (max-width: 649px){
+    body .frame nav{
+        display: none;
+    }
+    body .frame main{
+        width: 100%;
+    }
+    body .frame main .first_row{
+        flex-wrap: wrap;
+    }
+    body .frame main .first_row ul{
+        flex-basis: 46%;
+    }
+    body .frame main .third_row form{
+        flex-direction: column;
+    }
+    body .frame main .third_row form .workers_ul{
+        flex-basis: 90%;
+    }
+    body .frame main .second_row{
+        flex-wrap: wrap;
+    }
+    body .frame main .second_row ul{
+        flex-basis: 100%;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .header_0{
+        margin-left: 5%;
+    }
+    .burger-menu .wrapper #check-menu:checked ~ .navigation_menu{
+        width: 35%;
+    }
+    .popup{
+        width: 100%;
+        z-index: 11;
+    }
+}
+@media (max-width: 499px){
+    body .frame nav{
+        display: none;
+    }
+    body .frame main{
+        width: 99%;
+    }
+    body .frame main .first_row{
+        flex-wrap: wrap;
+    }
+    body .frame main .first_row ul{
+        flex-basis: 100%;
+    }
+    body .frame main .third_row form{
+        flex-direction: column;
+    }
+    body .frame main .third_row form .workers_ul{
+        flex-basis: 90%;
+    }
+    body .frame main .second_row{
+        flex-wrap: wrap;
+    }
+    body .frame main .second_row ul{
+        flex-basis: 100%;
+    }
+    body .frame main .first_row ul li:nth-child(3){
+        width: 20%;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .header_0{
+        margin-left: 15%;
+    }
+    .burger-menu .wrapper #check-menu:checked ~ .navigation_menu{
+        width: 100%;
+    }
+    .popup{
+        width: 100%;
+        z-index: 11;
     }
 }
