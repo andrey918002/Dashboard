@@ -20,7 +20,16 @@
         flex-wrap: wrap;
     }
     body .frame main .first_row ul{
-        flex-basis: 46%;
+        flex-basis: 42%;
+        padding: 20px 3.5% 0 3.5%;
+    }
+    body .frame main .second_row ul li:nth-child(3){
+        left: 10%;
+        width: 80%;
+    }
+    body .frame main .second_row ul{
+        padding: 180px 3.1% 0 3.1%;
+        flex-basis: 26%;
     }
     body .frame main .third_row form{
         flex-direction: column;
@@ -28,7 +37,6 @@
     body .frame main .third_row form .workers_ul{
         flex-basis: 90%;
     }
-
     .popup_main {
         display: flex;
         flex-direction: column;
@@ -43,7 +51,6 @@
         width: 100%;
         margin-left: 0;
     }
-
 }
 @media (min-width: 650px) and (max-width: 799px){
     body .frame nav{
@@ -58,6 +65,15 @@
     body .frame main .first_row ul{
         flex-basis: 46%;
     }
+    body .frame main .second_row ul li:nth-child(3){
+        left: 10%;
+        width: 80%;
+    }
+    body .frame main .second_row ul{
+        padding: 180px 3.1% 0 3.1%;
+        flex-basis: 26%;
+    }
+
     body .frame main .third_row form{
         flex-direction: column;
     }
@@ -105,6 +121,13 @@
     }
     body .frame main .first_row ul{
         flex-basis: 46%;
+    }
+    body .frame main .second_row ul li:nth-child(3){
+        left: 3.5%;
+        width: 93%;
+    }
+    body .frame main .second_row ul{
+        padding: 180px 3.4% 0 3.4%;
     }
     body .frame main .third_row form{
         flex-direction: column;
@@ -166,6 +189,21 @@
     }
     body .frame main .first_row ul{
         flex-basis: 100%;
+        padding-left: 3.2%;
+        padding-right: 3.5%;
+    }
+    body .frame main .first_row ul li:nth-child(3){
+        left: 3.5%;
+    }
+    body .frame main .first_row ul li:nth-child(4){
+        padding-left: 0;
+    }
+    body .frame main .second_row ul li:nth-child(3){
+        left: 3.5%;
+        width: 93%;
+    }
+    body .frame main .second_row ul{
+        padding: 180px 3.4% 0 3.4%;
     }
     body .frame main .third_row form{
         flex-direction: column;
