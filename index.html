@@ -79,19 +79,19 @@
 				<ul>
 					<li>Daily Sales</li>
 					<li>55% increase in today sales</li>
-					<li></li>
+					<li><!--Img Absolute--></li>
 					<li>update 4 min ago</li>
 				</ul>
 				<ul>
 					<li>Email Subscriptions</li>
 					<li>Last Campaign Performance</li>
-					<li></li>
+					<li><!--Img Absolute--></li>
 					<li>update 2 days ago</li>
 				</ul>
 				<ul>
 					<li>Completed Tasks</li>
 					<li>Last Campaign Performance</li>
-					<li></li>
+					<li><!--Img Absolute--></li>
 					<li>update 2 days ago</li>
 				</ul>
 			</div>
@@ -198,37 +198,44 @@
 				<a href="#fixed_block" class="popup_close"></a>
 				<h3>User Profile</h3>
 				<div class="popup_main">
-					<div class="profile_user">
+					<form method="post" autocomplete="off" class="profile_user">
 						<ul class="user_ul">
-							<li class="user_absolute_li"></li>
+							<li class="user_absolute_li"><!--purple block--></li>
 							<li class="user_li">
 								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,}" title="Enter Your Company name" placeholder="Company" required></li>
+									<li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё0-9]{2,}" title="Enter User name" placeholder="Enter User name" required></li>
+									<li><input type="email" maxlength="30" title="Enter Email address in the specified format: Local@domen.com" placeholder="Enter Your Email address" required></li>
 								</ul>
 							</li>
 							<li class="user_li">
 								<ul>
-									<li></li>
-									<li></li>
+									<li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,}" title="Enter Your First name" placeholder="First name" required></li>
+									<li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,}" title="Enter Your Last name" placeholder="Last name" required></li>
 								</ul>
 							</li>
-							<li class="user_li"></li>
+							<li class="user_li"><input type="text" maxlength="30" pattern="[A-Za-zА-Яа-яЁё0-9]{2,}" title="Enter Your Address" placeholder="Address" required></li>
 							<li class="user_li">
 								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li><input type="text" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{2,}"  title="Enter Your City" placeholder="City" required></li>
+									<li><input type="text" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{2,}"  title="Enter Your Country" placeholder="Country" required></li>
+									<li><input type="text" maxlength="6" pattern="[0-9]{6}" title="Enter Your Postal code" placeholder="Postal code" required></li>
 								</ul>
 							</li>
-							<li class="user_li"></li>
-							<li class="user_li"><a href="#"></a></li>
+							<li class="user_li"><textarea name="" id="" cols="100%" rows="3" placeholder="About me" title="Write about yourself"></textarea></li>
+							<li class="user_li"><input type="button" value="Update Profile"></li>
 						</ul>
-					</div>
-					<div class="info_user"></div>
+					</form>
+					<ul class="info_user">
+						<li><!--Avatar_User--></li>
+						<li>Ceo / Co-founder</li>
+						<li>Alec Thompson</li>
+						<li>Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanya
+						I love Rick Owner's bed design but the back is...</li>
+					</ul>
 				</div>
-				<footer>
+				<div class="hr_2"></div>
+				<footer class="footer_popup">
 					<div class="footer_nav">
 						<a href="#">About</a>
 						<a href="#">Blog</a>

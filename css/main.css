@@ -400,11 +400,7 @@ body .frame main .third_row form .tasks_ul li:nth-child(1),
 body .frame main .third_row form .tasks_ul li:nth-child(5){
   border-bottom: none!important;
 }
-/*body .frame main .third_row form .tasks_ul li span{
-  display: block;
-  margin-left: 2%;
-  flex-basis: 100%;
-}*/
+
 body .frame main .third_row form .tasks_ul li label{
   flex-basis: 100%;
 }
@@ -557,6 +553,7 @@ footer .footer_nav a{
   padding: 0 15%;
   display: block;
   transition: .3s;
+  font-weight: bold;
 }
 footer .footer_nav a:hover{
   color: #8f8d94;
@@ -620,7 +617,7 @@ footer .footer_nav a:hover{
   filter: brightness(120%);
 }
 h3{
-  padding: 25px 0 25px 3%;
+  padding: 25px 0 25px 0;
   font-size: 22px;
   font-weight: bold;
   color: black;
@@ -629,15 +626,18 @@ h3{
 .popup_main{
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
 }
 .profile_user{
   width: 65%;
-  height: 400px;
+  display: flex;
+  height: 490px;
   border: 1px solid gray;
 }
 .info_user{
+  margin-left: 1%;
   width: 35%;
-  height: 400px;
+  height: 290px;
   border: 1px solid gray;
 }
 .user_ul{
@@ -650,4 +650,129 @@ h3{
   width: 94%;
   height: 80px;
   background-color: #c32056;
+}
+.user_li:nth-child(2){
+  padding-top: 50px;
+}
+.user_li ul{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 3% 0 3%;
+}
+.user_li:nth-child(2) ul li{
+  display: block;
+  flex-basis: 33%;
+  padding-right: 2%;
+}
+.user_li:nth-child(3) ul li{
+  display: block;
+  flex-basis: 48%;
+  padding-right: 2%;
+}
+.user_li:nth-child(3) input[type="text"]{
+  padding-left: 2%!important;
+}
+.user_li:nth-child(4){
+  display: block;
+  padding-top: 10px;
+  margin: 0 4.9% 0 3%;
+}
+.user_li:nth-child(4) input[type="text"]{
+  padding-left: 1%!important;
+}
+.user_li:nth-child(5) ul li{
+  display: block;
+  flex-basis: 33%;
+  padding-right: 2%;
+}
+.user_li:nth-child(7){
+  display: flex;
+  justify-content: flex-end;
+}
+input[type="button"]{
+  background-color: #c32056;
+  margin: 15px 3.5% 0 0;
+  width: 31%;
+  height: 40px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+  transition: .3s;
+}
+input[type="button"]:hover{
+  background-color: #de4074;
+  color: #d6d5d5;
+}
+input[type="text"], input[type="email"]{
+  border:none;
+  border-bottom: 1px solid gray;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  width: 100%;
+  padding-left: 3%;
+}
+textarea{
+  padding-top: 20px;
+  margin-left: 3%;
+  padding-left: 0.9%;
+  font-size: 16px;
+  font-family: "SegoeUI";
+  box-sizing: border-box;
+  width: 93.4%;
+  height: 100%;
+  border:none;
+  border-bottom: 1px solid gray;
+}
+.footer_popup{
+  padding-left: 0;
+  font-weight: bold;
+}
+.footer_popup small{
+  font-weight: normal;
+  color: #868686;
+}
+.info_user{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info_user li{
+  text-align: center;
+}
+.info_user li:nth-child(1){
+  position:absolute;
+  top: -45px;
+  left: auto;
+  background-image: url("../img/page.jpg");
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.info_user li:nth-child(2){
+  margin-top: 90px;
+  color: #868686;
+  text-transform: uppercase;
+}
+.info_user li:nth-child(3){
+  margin-top: 15px;
+}
+.info_user li:nth-child(4){
+  margin-top: 15px;
+  color: #868686;
+  padding: 0 20px 0 20px;
+}
+.hr_2{
+  margin: 70px -5% 0 -5%;
+  border-bottom: 1px solid gray;
+}
+input:focus:valid{
+  box-shadow: 0 0 2px 2px #1fe71f;
+}
+input:focus:invalid{
+  box-shadow: 0 0 2px 2px red;
 }

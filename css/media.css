@@ -13,6 +13,9 @@
 
 
 @media (min-width: 800px) and (max-width: 999px){
+    nav .fixed_block ul li a{
+        padding-left: 4%;
+    }
     body .frame main .first_row{
         flex-wrap: wrap;
     }
@@ -25,6 +28,22 @@
     body .frame main .third_row form .workers_ul{
         flex-basis: 90%;
     }
+
+    .popup_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_main .profile_user{
+        margin-top: 50px;
+        order: 1;
+        width: 100%;
+    }
+    .popup_main .info_user{
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 @media (min-width: 650px) and (max-width: 799px){
     body .frame nav{
@@ -47,6 +66,7 @@
     }
     .burger-menu{
         display: block;
+        z-index: 20;
     }
     .header_0{
         margin-left: 5%;
@@ -54,6 +74,23 @@
     .popup{
         width: 100%;
         z-index: 11;
+    }
+    .popup_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_main .profile_user{
+        margin-top: 50px;
+        order: 1;
+        width: 100%;
+    }
+    .popup_main .info_user{
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    h3{
+        margin-left: 10%;
     }
 }
 @media (min-width: 500px) and (max-width: 649px){
@@ -83,6 +120,7 @@
     }
     .burger-menu{
         display: block;
+        z-index: 20;
     }
     .header_0{
         margin-left: 5%;
@@ -93,6 +131,27 @@
     .popup{
         width: 100%;
         z-index: 11;
+    }
+    .popup_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_main .profile_user{
+        margin-top: 50px;
+        order: 1;
+        width: 100%;
+    }
+    .popup_main .info_user{
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    h3{
+        margin-left: 15%;
+    }
+    footer .footer_nav a{
+        padding: 0 5%;
+        font-size: 16px;
     }
 }
 @media (max-width: 499px){
@@ -125,6 +184,7 @@
     }
     .burger-menu{
         display: block;
+        z-index: 20;
     }
     .header_0{
         margin-left: 15%;
@@ -135,5 +195,43 @@
     .popup{
         width: 100%;
         z-index: 11;
+    }
+    .burger-menu .wrapper .navigation_menu li .menu_links{
+        padding-left: 28%;
+        font-size: 30px;
+    }
+    .popup_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_main .profile_user{
+        margin-top: 50px;
+        order: 1;
+        width: 100%;
+    }
+    .popup_main .info_user{
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .profile_user{
+        height: 730px;
+    }
+    .user_li ul{
+        flex-direction: column;
+    }
+    h3{
+        margin-left: 30%;
+    }
+    footer .footer_nav a{
+        padding: 0 5%;
+        font-size: 14px;
+    }
+    input[type="button"]{
+        width: 40%;
+        padding-right: 5%;
+    }
+    .hr_2{
+        margin: 15px -5% 0 -5%;
     }
 }
